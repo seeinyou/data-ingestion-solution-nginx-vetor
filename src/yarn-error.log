@@ -1,0 +1,63 @@
+Arguments: 
+  /Users/yonmzn/.nvm/versions/node/v14.19.0/bin/node /usr/local/bin/yarn add Mustache
+
+PATH: 
+  /Users/yonmzn/.nvm/versions/node/v14.19.0/bin:/Users/yonmzn/install/apache-maven-3.8.5/bin:/Users/yonmzn/.toolbox/bin/:/Users/yonmzn/opt/anaconda3/bin:/Users/yonmzn/opt/anaconda3/condabin:/Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home/bin:/Users/yonmzn/spark/spark-3.2.0-bin-hadoop3.2/python:/Users/yonmzn/opt/anaconda3/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin
+
+Yarn version: 
+  1.22.17
+
+Node version: 
+  14.19.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/Mustache: Not found
+      at Request.params.callback [as _callback] (/usr/local/lib/node_modules/yarn/lib/cli.js:67029:18)
+      at Request.self.callback (/usr/local/lib/node_modules/yarn/lib/cli.js:140883:22)
+      at Request.emit (events.js:400:28)
+      at Request.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:141855:10)
+      at Request.emit (events.js:400:28)
+      at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:141777:12)
+      at Object.onceWrapper (events.js:519:28)
+      at IncomingMessage.emit (events.js:412:35)
+      at endReadableNT (internal/streams/readable.js:1334:12)
+      at processTicksAndRejections (internal/process/task_queues.js:82:21)
+
+npm manifest: 
+  {
+    "name": "src",
+    "version": "0.1.0",
+    "bin": {
+      "src": "bin/src.js"
+    },
+    "scripts": {
+      "build": "tsc",
+      "watch": "tsc -w",
+      "test": "jest",
+      "cdk": "cdk"
+    },
+    "devDependencies": {
+      "@types/jest": "^27.5.2",
+      "@types/node": "10.17.27",
+      "@types/prettier": "2.6.0",
+      "jest": "^27.5.1",
+      "ts-jest": "^27.1.4",
+      "aws-cdk": "2.39.1",
+      "ts-node": "^10.9.1",
+      "typescript": "~3.9.7"
+    },
+    "dependencies": {
+      "aws-cdk-lib": "2.39.1",
+      "constructs": "^10.0.0",
+      "source-map-support": "^0.5.21"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
