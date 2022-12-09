@@ -16,6 +16,26 @@ The repository hosts a temporary version the data ingestion solution using Nginx
 
 ### Prerequisites
 
+You can deploy the solution with AWS CDK locally or AWS Cloud9.
+
+#### Deploy with Cloud9
+Create an [AWS Cloud9](https://aws.amazon.com/cloud9/) environment in the region where you want to deploy the project, and download/upload the ZIP file into the Cloud9 environment.
+
+*AWS Cloud9 is a cloud-based integrated development environment (IDE) that lets you write, run, and debug your code with just a browser. It includes a code editor, debugger, and terminal.*
+
+## Extend the EBS volume of Cloud9 (20GB)
+
+Extend the EBS volume to at 20GB on the AWS EC2 console, because the default EBS volume (10GB) is not enough for compiling the CDK package . It might take a few minutes. For more information, please check the [extend an EBS volume on Linux](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/recognize-expanded-volume-linux.html) document. 
+
+### Run commands in Cloud9
+> lsblk
+
+> sudo growpart /dev/nvme0n1 1
+
+> sudo xfs_growfs -d /
+
+
+#### Setup AWS CDK locally
 1. Follow this [doc](https://docs.aws.amazon.com/cdk/v2/guide/getting_started.html) to setup AWS CDK
 2. Install Docker in your machine
 3. Run below commands to install npm packages 
